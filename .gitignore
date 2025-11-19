@@ -1,0 +1,7 @@
+.git.backup/
+exome_seq_multiqc_untrimmed/exome_read_depth
+exome_seq_multiqc_untrimmed/fastqc_results
+exome_seq_multiqc_untrimmed/multiqc_results
+RNA_seq_multiqc_untrimmed/fastqc_results
+RNA_seq_multiqc_untrimmed/merged_fastqs
+RNA_seq_multiqc_untrimmed/multiqc_results
