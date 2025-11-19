@@ -2,7 +2,7 @@ MULTIQC UNTRIMMED
 For this project, 10 normotensive (5 males, 5 females) and 10 hypertensive/preeclampsia (6 males, 4 females) placentas were sampled. Each placenta was sectioned into 4 quadrants for sampling.
 
 For exome sequencing, there was only one DNA sample sequenced from each placenta (only Q1).
-This raw data can be found in /data/Wilson_Lab/placenta/valleywise_raw_data/exome.
+Raw data can be found in /data/Wilson_Lab/placenta/valleywise_raw_data/exome.
 There are 40 samples for the whole exome sequencing MultiQC results (one for each placenta). Sample names and paths can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq/fastq_list.txt. fastq_list.txt was then used to make a fastqc.swarm script.
 MultiQC results can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq/multiqc_results.
 
