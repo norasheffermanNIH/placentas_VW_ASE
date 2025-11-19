@@ -8,7 +8,7 @@ library(tidyr)
 library(writexl)
 
 #Exome Seq Total Sequence Count Summary
-exome <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq/multiqc_results/multiqc_data/multiqc_fastqc.txt")
+exome <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq_multiqc_untrimmed/multiqc_results/multiqc_data/multiqc_fastqc.txt")
 #organize by patient, quadrant, replicate 
 summary_exome <- exome %>% 
   select(Sample, `Total Sequences`) %>% 
@@ -19,7 +19,7 @@ summary_exome <- exome %>%
 
 #Methyl Seq Total Sequence Count Summary
 #XX
-methyl_XX <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq/multiqc_results_XX/multiqc_data/multiqc_fastqc.txt")
+methyl_XX <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/multiqc_results_XX/multiqc_data/multiqc_fastqc.txt")
 #organize by patient, quadrant, replicate 
 summary_methyl_XX <- methyl_XX %>% 
   select(Sample, `Total Sequences`) %>% 
@@ -30,7 +30,7 @@ summary_methyl_XX <- methyl_XX %>%
            recode("A" = "Q1", "B" = "Q2", "C" = "Q3", "D" = "Q4")) %>% 
   mutate(Assay = "Methyl_XX")
 #XY
-methyl_XY <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq/multiqc_results_XY/multiqc_data/multiqc_fastqc.txt")
+methyl_XY <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/multiqc_results_XY/multiqc_data/multiqc_fastqc.txt")
 #organize by patient, quadrant, replicate 
 summary_methyl_XY <- methyl_XY %>% 
   select(Sample, `Total Sequences`) %>% 
@@ -42,7 +42,7 @@ summary_methyl_XY <- methyl_XY %>%
   mutate(Assay = "Methyl_XY")
 
 #RNA Seq Total Count Summary
-RNA <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq/multiqc_results/multiqc_data/multiqc_fastqc.txt")
+RNA <- read_tsv("/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/multiqc_results/multiqc_data/multiqc_fastqc.txt")
 #organize by patient, quadrant, replicate 
 summary_RNA <- RNA %>% 
   select(Sample, `Total Sequences`) %>% 
@@ -61,23 +61,16 @@ summary_RNA <- RNA %>%
 combined <- bind_rows(summary_exome, summary_methyl_XX, summary_methyl_XY, summary_RNA) %>% 
   select(Patient, Quadrant, `Total Sequences`, Assay)
 
-#Calculate mean number of reads 
-#Assay
-mean_by_assay <- combined %>% 
-  group_by(Assay) %>% 
-  summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE))
-#Patient
-mean_by_patient <- combined %>% 
-  group_by(Assay, Patient) %>% 
-  summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE))
-#Quadrant
-mean_by_quad <- combined %>% 
-  group_by(Assay, Patient, Quadrant) %>% 
-  summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE))
+#Compare read depth between assays in the same quadrant in each patient
+mean_reads_quad <- combined %>% 
+  group_by(Assay, Quadrant, Patient) %>% 
+  summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE)) %>% 
+  pivot_wider(names_from = Assay, values_from = mean_reads)
+write_tsv(mean_reads_quad, "/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/mean_reads_quad.tsv")
 
-#Table to export
-mean_reads_wide <- mean_by_quad %>%
-  pivot_wider(names_from = Quadrant, values_from = mean_reads) %>%
-  arrange(Assay, Patient)
-#Save table
-write_tsv(mean_reads_wide, "/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/mean_reads_untrimmed.tsv")
+#Compare read depth across all quadrants in a patient
+mean_reads_patient <- combined %>% 
+  group_by(Patient, Quadrant, Assay) %>% 
+  summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE)) %>% 
+  pivot_wider(names_from = Quadrant, values_from = mean_reads)
+write_tsv(mean_reads_patient, "/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/mean_reads_patient.tsv")
