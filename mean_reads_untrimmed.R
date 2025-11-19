@@ -66,6 +66,7 @@ mean_reads_quad <- combined %>%
   group_by(Assay, Quadrant, Patient) %>% 
   summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE)) %>% 
   pivot_wider(names_from = Assay, values_from = mean_reads)
+#save table
 write_tsv(mean_reads_quad, "/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/mean_reads_quad.tsv")
 
 #Compare read depth across all quadrants in a patient
@@ -73,4 +74,5 @@ mean_reads_patient <- combined %>%
   group_by(Patient, Quadrant, Assay) %>% 
   summarise(mean_reads = mean(`Total Sequences`, na.rm = TRUE)) %>% 
   pivot_wider(names_from = Quadrant, values_from = mean_reads)
+#save table
 write_tsv(mean_reads_patient, "/data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/mean_reads_patient.tsv")
