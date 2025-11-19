@@ -9,4 +9,5 @@ methyl_seq_multiqc_untrimmed/fastqc_results_XX
 methyl_seq_multiqc_untrimmed/fastqc_results_XY
 methyl_seq_multiqc_untrimmed/multiqc_results_XX
 methyl_seq_multiqc_untrimmed/multiqc_results_XY
-mean_reads_untrimmed.tsv
+mean_reads_quad.tsv
+mean_reads_patient.tsv
