@@ -61,6 +61,7 @@ summary_RNA <- RNA %>%
 combined <- bind_rows(summary_exome, summary_methyl_XX, summary_methyl_XY, summary_RNA) %>% 
   select(Patient, Quadrant, `Total Sequences`, Assay)
 
+#TABLES
 #Compare read depth between assays in the same quadrant in each patient
 mean_reads_quad <- combined %>% 
   group_by(Assay, Quadrant, Patient) %>% 
