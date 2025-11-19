@@ -15,7 +15,7 @@ Workflow and scripts for merging can be found in /data/Wilson_Lab/projects/place
 Samples can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/fastq_list.txt. fastq_list.txt was then used to make a fastqc.swarm script.
 MultiQC results can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/multiqc_results.
 
-For **methyl sequencing**, one sample per quadrant for each placenta was sequenced at the same time.
+For **methylation sequencing**, one sample per quadrant for each placenta was sequenced at the same time.
 This raw data can be found in /data/Wilson_Lab/placenta/valleywise_raw_data/methylseq.
 The females are run separately from the males to later use a different sex-aware version of the reference genome for each.
 There are 72 samples for XX methyl sequencing MultiQC results.
