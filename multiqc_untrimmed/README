@@ -1,0 +1,29 @@
+MULTIQC UNTRIMMED
+For this project, 10 normotensive (5 males, 5 females) and 10 hypertensive/preeclampsia (6 males, 4 females) placentas were sampled. Each placenta was sectioned into 4 quadrants for sampling.
+
+For **exome sequencing**, there was only one DNA sample sequenced from each placenta (only Q1).
+Raw data can be found in /data/Wilson_Lab/placenta/valleywise_raw_data/exome.
+There are 40 samples for the whole exome sequencing MultiQC results (one for each placenta). Sample names and paths can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq_multiqc_untrimmed/fastq_list.txt. fastq_list.txt was then used to make a fastqc.swarm script.
+MultiQC results can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/exome_seq_multiqc_untrimmed/multiqc_results.
+
+For **RNA sequencing**, one sample was first sequenced from the first quadrant for each placenta, and then some months later samples were sequenced for quadrants 2, 3, and 4.
+All RNA samples were taken at the same time but sequenced at different times.
+Raw data can be found for Q1 in /data/Wilson_Lab/placenta/valleywise_raw_data/RNAseq.
+Raw data can be found for Q2, Q3, and Q4 in /data/Wilson_Lab/placenta/valleywise_raw_data/valleywise_placenta_3samples.
+There are 160 samples for RNA sequencing MultiQC results (one for each quadrant in each placenta). Q2, Q3, and Q4 samples were run across two lanes, so they had to be merged before FastQC and MultiQC analysis. 
+Workflow and scripts for merging can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/README.
+Samples can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/fastq_list.txt. fastq_list.txt was then used to make a fastqc.swarm script.
+MultiQC results can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/RNA_seq_multiqc_untrimmed/multiqc_results.
+
+For **methylation sequencing**, one sample per quadrant for each placenta was sequenced at the same time.
+This raw data can be found in /data/Wilson_Lab/placenta/valleywise_raw_data/methylseq.
+The females are run separately from the males to later use a different sex-aware version of the reference genome for each.
+There are 72 samples for XX methyl sequencing MultiQC results.
+Samples and more information about samples can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/fastq_list_XX.txt.
+There are 88 samples for XY methyl sequencing MultiQC results.
+Samples and more information about samples can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/fastq_list_XY.txt.
+There are 160 samples for the methyl sequencing MultiQC results (one for each quadrant in each placenta). 
+MultiQC results can be found in /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/multiqc_results_XX for females and /data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed/methyl_seq_multiqc_untrimmed/multiqc_results_XY for males.
+
+The mean_reads_untrimmed.R file contains code for making tables summarizing mean read depth between assays in the same quadrant (mean_reads_quad.tsv) and mean read depth across all quadrants in a patient (mean_reads_patient.tsv). These tables can be found in data/Wilson_Lab/projects/placentas_VW_ASE/multiqc_untrimmed.
+

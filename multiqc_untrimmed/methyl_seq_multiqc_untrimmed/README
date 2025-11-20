@@ -1,0 +1,25 @@
+The workflow for running FastQC and MultiQC on the methyl sequencing samples:
+
+For methyl seq analysis, we analyzed the females separately from the males to use a different sex-aware version of the reference genome for each down the line.
+
+The file list for female methylation data can be found at **/data/Wilson_Lab/projects/placenta_multiomics/valleywise_4quad_methylation/valleywise_methylseq_fems/samplesheet_XXonly.csv**.
+The file list for male methylation data can be found at **/data/Wilson_Lab/projects/placenta_multiomics/valleywise_4quad_methylation/valleywise_methylseq_males/samplesheet_XY.csv**.
+
+Workflow for XX:
+We can run the script **make_fastq_list_XX.sh** to make a list of all XX methyl seq fastq files from each quadrant, **fastq_list_XX.txt**.
+
+With this list, we can use **make_fastqc_swarm_XX.sh** to build a swarm file **fastqc_XX.swarm** that runs FastQC on each sample, which can then be run as a swarm job.
+The output FastQC files are found under the directroy **fastqc_results_XX**.
+
+Once the FastQC results are available, we can run MultiQC using **run_multiqc_XX.sh**.
+Results can be found under the directory **multiqc_results_XX**!
+
+
+Workflow for XY:
+We can run the script **make_fastq_list_XY.sh** to make a list of all XX methyl seq fastq files from each quadrant, **fastq_list_XY.txt**.
+
+With this list, we can use **make_fastqc_swarm_XY.sh** to build a swarm file **fastqc_XY.swarm** that runs FastQC on each sample, which can then be run as a swarm job.
+The output FastQC files are found under the directroy **fastqc_results_XY**.
+
+Once the FastQC results are available, we can run MultiQC using **run_multiqc_XY.sh**.
+Results can be found under the directory **multiqc_results_XY**!
