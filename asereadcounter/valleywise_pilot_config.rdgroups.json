@@ -1,0 +1,269 @@
+{
+    "Commment_Input_Output_Directories": "The following section specifies the input and output directories for the files to be used in the script",
+    "Trimmed_FastQC_Input_File_Directory": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+
+    "Comment_Transcriptome_Index": "The following section specified the location of the index file for Salmon",
+    "HG38_Transcriptome_Index_HISAT_Path_female": "/data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XXonly/HISAT_indexes/GRCh38.p12.genome.XXonly",
+    "HG38_Transcriptome_Index_HISAT_Path_male": "/data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY",
+
+    "Comment_GTF_gencode.v29.": "The following section is the specified location for the gencode gene annotation file",
+    "gencode.v29.annotation.gtf_path": "/data/Wilson_Lab/references/GENCODE/gencode.v29.annotation.gtf",
+
+    "Comment_Sample_Info": "The following section lists the samples that are to be analyzed",
+    "normotensive_female_samples": [
+        "VW-ASUPlace-Cont02_180_013_S184_L001",
+        "VW-ASUPlace-Cont03_168_025_S185_L001",
+        "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+        "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+        "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001"
+    ],
+    "normotensive_male_samples": [
+        "VW-ASUPlace-Cont01_192_001_S183_L001",
+        "VW-ASUPlace-Cont04_156_037_S186_L001",
+        "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+        "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+        "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001"
+    ],
+    "hypertensive_female_samples": [
+        "VW-ASUPlace-HDP01_167_026_S193_L001",
+        "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+        "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+        "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001"
+    ],
+    "hypertensive_male_samples": [
+        "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+        "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+        "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+        "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+        "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+        "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001"
+    ],
+    "labeled_female_sexcheck_male": [
+        "VW-ASUPlace-HDP01_167_026_S193_L001",
+    ],
+    "labeled_male_sexcheck_female": [
+        "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+    ],
+    "all_rna_samples": [
+        "VW-ASUPlace-Cont01_192_001_S183_L001",
+        "VW-ASUPlace-Cont02_180_013_S184_L001",
+        "VW-ASUPlace-Cont03_168_025_S185_L001",
+        "VW-ASUPlace-Cont04_156_037_S186_L001",
+        "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+        "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+        "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+        "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+        "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+        "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001",
+        "VW-ASUPlace-HDP01_167_026_S193_L001",
+        "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+        "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+        "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+        "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+        "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+        "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+        "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+        "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+        "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001"
+    ],
+    "VW-ASUPlace-Cont04_156_037_S186_L001": {
+        "ID": "VW-ASUPlace-Cont04_156_037_S186_L001",
+        "LB": "VW-ASUPlace-Cont04_156_037_S186_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont04_156_037_S186_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont04_156_037_S186_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont04_156_037_S186_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001": {
+        "ID": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+        "LB": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont01_192_001_S183_L001": {
+        "ID": "VW-ASUPlace-Cont01_192_001_S183_L001",
+        "LB": "VW-ASUPlace-Cont01_192_001_S183_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont01_192_001_S183_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont01_192_001_S183_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont01_192_001_S183_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001": {
+        "ID": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+        "LB": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont02_180_013_S184_L001": {
+        "ID": "VW-ASUPlace-Cont02_180_013_S184_L001",
+        "LB": "VW-ASUPlace-Cont02_180_013_S184_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont02_180_013_S184_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont02_180_013_S184_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont02_180_013_S184_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001": {
+        "ID": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+        "LB": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001": {
+        "ID": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001",
+        "LB": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP01_167_026_S193_L001": {
+        "ID": "VW-ASUPlace-HDP01_167_026_S193_L001",
+        "LB": "VW-ASUPlace-HDP01_167_026_S193_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP01_167_026_S193_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP01_167_026_S193_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP01_167_026_S193_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001": {
+        "ID": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+        "LB": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001": {
+        "ID": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+        "LB": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont03_168_025_S185_L001": {
+        "ID": "VW-ASUPlace-Cont03_168_025_S185_L001",
+        "LB": "VW-ASUPlace-Cont03_168_025_S185_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont03_168_025_S185_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont03_168_025_S185_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont03_168_025_S185_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001": {
+        "ID": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+        "LB": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001": {
+        "ID": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+        "LB": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001": {
+        "ID": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+        "LB": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001": {
+        "ID": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+        "LB": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001": {
+        "ID": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+        "LB": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001": {
+        "ID": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+        "LB": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001": {
+        "ID": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001",
+        "LB": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001": {
+        "ID": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+        "LB": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_R2_001.fastq.gz"
+    },
+    "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001": {
+        "ID": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+        "LB": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+        "PL": "Illumina",
+        "fq_1": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001_R1_001.fastq.gz",
+        "SM": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+        "PU": "HT2LLDSX3.1",
+        "fq_path": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/",
+        "fq_2": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001_R2_001.fastq.gz"
+    }
+}

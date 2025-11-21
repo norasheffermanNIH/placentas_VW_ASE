@@ -1,0 +1,36 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cluster nodes: 50
+Job stats:
+job                      count
+---------------------  -------
+AddReadGrps_females          9
+AddReadGrps_males           11
+HISAT_paired_females         9
+HISAT_paired_males          11
+MarkDups_females             9
+MarkDups_males              11
+all                          1
+bam_sort_females             9
+bam_sort_males              11
+index_bam_females            9
+index_bam_males             11
+samtools_view_females        9
+samtools_view_males         11
+total                      121
+
+Select jobs to execute...
+
+[Fri Nov 21 11:33:01 2025]
+rule HISAT_paired_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_HISAT_pair_trim_XY.sam
+    jobid: 45
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_HISAT_pair_trim_XY.sam
+    wildcards: sample_name=VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001
+    resources: mem_mb=11290, mem_mib=10767, disk_mb=11290, disk_mib=10767, tmpdir=<TBD>
+
+perl hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001_HISAT_pair_trim_XY.sam
+RuleException in rule HISAT_paired_males in file /vf/users/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/processed_bams_Q1.snakefile, line 23:
+NameError: The name 'cmd' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+sbatch --cpus-per-task={threads} --mem=8g --time=24:00:00 --wrap='bash slurm_wrapper.sh {cmd}'
