@@ -1,0 +1,54 @@
+{
+    "dna_rna_normotensive_females" : {
+        "Plac_CON02": ["VW-ASUPlace-Cont02_180_013_S184_L001"],
+        "Plac_CON03": ["VW-ASUPlace-Cont03_168_025_S185_L001"],
+        "Plac_CON05": ["VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001"],
+        "Plac_CON06": ["VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001"],
+        "Plac_CON10": ["VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001"]
+    },
+    "dna_rna_normotensive_males" : {
+        "Plac_CON01": ["VW-ASUPlace-Cont01_192_001_S183_L001"],
+        "Plac_CON04": ["VW-ASUPlace-Cont04_156_037_S186_L001"],
+        "Plac_CON07": ["VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001"],
+        "Plac_CON08": ["VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001"],
+        "Plac_CON09": ["VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001"]
+    },
+    "dna_rna_hypertensive_females" : {
+        "Plac_HDP01":["VW-ASUPlace-HDP01_167_026_S193_L001"],
+        "Plac_HDP08":["VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001"],
+        "Plac_HDP09":["VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001"],
+        "Plac_HDP10":["VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001"]
+    },
+    "dna_rna_hypertensive_males" : {
+        "Plac_HDP02":["VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001"],
+        "Plac_HDP03":["VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001"],
+        "Plac_HDP04":["VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001"],
+        "Plac_HDP05":["VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001"],
+        "Plac_HDP06":["VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001"],
+        "Plac_HDP07":["VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001"]
+  },
+  "dna_rna_females": {
+        "Plac_CON02": ["VW-ASUPlace-Cont02_180_013_S184_L001"],
+        "Plac_CON03": ["VW-ASUPlace-Cont03_168_025_S185_L001"],
+        "Plac_CON05": ["VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001"],
+        "Plac_CON06": ["VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001"],
+        "Plac_CON10": ["VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001"],
+        "Plac_HDP01":["VW-ASUPlace-HDP01_167_026_S193_L001"],
+        "Plac_HDP08":["VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001"],
+        "Plac_HDP09":["VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001"],
+        "Plac_HDP10":["VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001"]
+  },
+  "dna_rna_males": {
+        "Plac_CON01": ["VW-ASUPlace-Cont01_192_001_S183_L001"],
+        "Plac_CON04": ["VW-ASUPlace-Cont04_156_037_S186_L001"],
+        "Plac_CON07": ["VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001"],
+        "Plac_CON08": ["VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001"],
+        "Plac_CON09": ["VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001"],
+        "Plac_HDP02":["VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001"],
+        "Plac_HDP03":["VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001"],
+        "Plac_HDP04":["VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001"],
+        "Plac_HDP05":["VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001"],
+        "Plac_HDP06":["VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001"],
+        "Plac_HDP07":["VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001"]
+  }
+}

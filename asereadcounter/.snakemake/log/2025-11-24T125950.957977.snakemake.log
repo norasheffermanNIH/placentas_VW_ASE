@@ -1,0 +1,164 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+AddReadGrps_females          9
+AddReadGrps_males           11
+HISAT_paired_females         4
+HISAT_paired_males           1
+all                          1
+bam_sort_females             4
+bam_sort_males               1
+index_bam_females            9
+index_bam_males             11
+samtools_view_females        4
+samtools_view_males          1
+total                       56
+
+Select jobs to execute...
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    jobid: 57
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    jobid: 25
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    jobid: 13
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    jobid: 37
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001
+    resources: tmpdir=/tmp
+[Mon Nov 24 12:59:53 2025]
+
+Error in rule AddReadGrps_females:
+    jobid: 57
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_XX.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam RGID=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001 RGPL=Illumina RGLB=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Nov 24 12:59:53 2025]
+Error in rule AddReadGrps_males:
+    jobid: 25
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_XY.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam RGID=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001 RGPL=Illumina RGLB=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Mon Nov 24 12:59:53 2025]
+rule HISAT_paired_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.sam
+    jobid: 12
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.sam
+    wildcards: sample_name=VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 12:59:53 2025]
+Error in rule AddReadGrps_males:
+    jobid: 13
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_XY.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam RGID=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001 RGPL=Illumina RGLB=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Mon Nov 24 12:59:53 2025]
+rule HISAT_paired_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.sam
+    jobid: 80
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.sam
+    wildcards: sample_name=VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 12:59:53 2025]
+Error in rule AddReadGrps_males:
+    jobid: 37
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_XY.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam RGID=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001 RGPL=Illumina RGLB=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    jobid: 17
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 12:59:53 2025]
+rule AddReadGrps_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    jobid: 45
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont02_180_013_S184_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 12:59:53 2025]
+Error in rule AddReadGrps_males:
+    jobid: 17
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_XY.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam RGID=VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001 RGPL=Illumina RGLB=VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Nov 24 12:59:53 2025]
+Error in rule AddReadGrps_females:
+    jobid: 45
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam
+    shell:
+        picard -Xmx14g AddOrReplaceReadGroups I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_XX.bam O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam RGID=VW-ASUPlace-Cont02_180_013_S184_L001 RGPU=HT2LLDSX3.1 RGSM=VW-ASUPlace-Cont02_180_013_S184_L001 RGPL=Illumina RGLB=VW-ASUPlace-Cont02_180_013_S184_L001 VALIDATION_STRINGENCY=LENIENT
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Nov 24 13:14:30 2025]
+Finished job 80.
+1 of 56 steps (2%) done
+[Mon Nov 24 13:16:47 2025]
+Finished job 12.
+2 of 56 steps (4%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-11-24T125950.957977.snakemake.log

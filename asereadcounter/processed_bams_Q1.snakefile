@@ -1,6 +1,6 @@
 import os
 
-configfile: "valleywise_pilot_config.rdgroups.json"
+configfile: "valleywise_pilot_config.rdgroups.json" 
 
 # Tool paths:
 fastqc_path = "fastqc"
@@ -8,7 +8,6 @@ multiqc_path = "multiqc"
 samtools_path = "samtools"
 bamtools_path = "bamtools"
 perllib_path = "perl"
-picard_path = "picard"
 
 #Directory to put all the results
 output_directory = "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/"
@@ -61,34 +60,37 @@ rule bam_sort_males:
     shell:
         "bamtools sort -in {input.IN_BAM} -out {output.sort_BAM}"
 
-rule MarkDups_males:
-    input:
-        sort_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_XY.bam"
-    output:
-        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_XY.bam",
-        metrics = output_directory+"processed_bams/stats/{sample_name}.XY.picard_mkdup_metrics.txt"
-    params:
-        picard = picard_path
-    shell:
-        "{params.picard} -Xmx14g MarkDuplicates I={input.sort_BAM} O={output.BAM} "
-        "M={output.metrics} VALIDATION_STRINGENCY=LENIENT"
-
 rule AddReadGrps_males:
     input:
-        Read_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_XY.bam"
+        Read_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_XY.bam"
     output:
-        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam"
+        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_rdgrp_XY.bam"
     params:
         id = lambda wildcards: config[wildcards.sample_name]["ID"],
         sm = lambda wildcards: config[wildcards.sample_name]["SM"],
         lb = lambda wildcards: config[wildcards.sample_name]["LB"],
         pu = lambda wildcards: config[wildcards.sample_name]["PU"],
         pl = lambda wildcards: config[wildcards.sample_name]["PL"],
-        picard = picard_path
     shell:
-        "{params.picard} -Xmx14g AddOrReplaceReadGroups I={input.Read_BAM} O={output.BAM} "
+        "java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar AddOrReplaceReadGroups I={input.Read_BAM} O={output.BAM} "
         "RGID={params.id} RGPU={params.pu} RGSM={params.sm} RGPL={params.pl} RGLB={params.lb} VALIDATION_STRINGENCY=LENIENT"
 
+rule MarkDups_males:
+    input:
+        sort_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_rdgrp_XY.bam"
+    output:
+        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
+        metrics = output_directory+"processed_bams/rna/stats/{sample_name}.XY.picard_mkdup_metrics.txt"
+    shell:
+        r"""
+        module load picard
+        mkdir -p /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats
+        java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
+        I={input.sort_BAM} \
+        O={output.BAM} \
+        M={output.metrics} \
+        VALIDATION_STRINGENCY=LENIENT
+        """ 
 
 rule index_bam_males:
     input:
@@ -118,34 +120,37 @@ rule bam_sort_females:
     shell:
         "bamtools sort -in {input.IN_BAM} -out {output.sort_BAM}"
 
-rule MarkDups_females:
-    input:
-        sort_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_XX.bam"
-    output:
-        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_XX.bam",
-        metrics = output_directory+"processed_bams/stats/{sample_name}.XX.picard_mkdup_metrics.txt"
-    params:
-        picard = picard_path
-    shell:
-        "{params.picard} -Xmx14g MarkDuplicates I={input.sort_BAM} O={output.BAM} "
-        "M={output.metrics} VALIDATION_STRINGENCY=LENIENT"
-
 rule AddReadGrps_females:
     input:
-        Read_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_XX.bam"
+        Read_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_XX.bam"
     output:
-        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam"
+        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_rdgrp_XX.bam"
     params:
         id = lambda wildcards: config[wildcards.sample_name]["ID"],
         sm = lambda wildcards: config[wildcards.sample_name]["SM"],
         lb = lambda wildcards: config[wildcards.sample_name]["LB"],
         pu = lambda wildcards: config[wildcards.sample_name]["PU"],
         pl = lambda wildcards: config[wildcards.sample_name]["PL"],
-        picard = picard_path
     shell:
-        "{params.picard} -Xmx14g AddOrReplaceReadGroups I={input.Read_BAM} O={output.BAM} "
+        "java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar AddOrReplaceReadGroups I={input.Read_BAM} O={output.BAM} "
         "RGID={params.id} RGPU={params.pu} RGSM={params.sm} RGPL={params.pl} RGLB={params.lb} VALIDATION_STRINGENCY=LENIENT"
 
+rule MarkDups_females:
+    input:
+        sort_BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_rdgrp_XX.bam"
+    output:
+        BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
+        metrics = output_directory+"processed_bams/rna/stats/{sample_name}.XX.picard_mkdup_metrics.txt"
+    shell:
+        r"""
+        module load picard
+        mkdir -p /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats
+        java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
+        I={input.sort_BAM} \
+        O={output.BAM} \
+        M={output.metrics} \
+        VALIDATION_STRINGENCY=LENIENT
+        """ 
 
 rule index_bam_females:
     input:

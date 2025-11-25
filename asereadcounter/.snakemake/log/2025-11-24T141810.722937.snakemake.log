@@ -1,0 +1,235 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+AddReadGrps_females          9
+AddReadGrps_males           11
+HISAT_paired_females         3
+MarkDups_females             9
+MarkDups_males              11
+all                          1
+bam_sort_females             4
+bam_sort_males               1
+index_bam_females            9
+index_bam_males             11
+samtools_view_females        4
+samtools_view_males          1
+total                       74
+
+Select jobs to execute...
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    jobid: 32
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    jobid: 22
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    jobid: 57
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont02_180_013_S184_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    jobid: 72
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    jobid: 47
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule samtools_view_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.sam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.bam
+    jobid: 99
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.bam
+    wildcards: sample_name=VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule AddReadGrps_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    jobid: 17
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001
+    resources: tmpdir=/tmp
+
+
+[Mon Nov 24 14:18:12 2025]
+rule samtools_view_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.sam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.bam
+    jobid: 14
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:31:08 2025]
+Finished job 72.
+1 of 74 steps (1%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:31:08 2025]
+rule MarkDups_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001.XX.picard_mkdup_metrics.txt
+    jobid: 71
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:31:28 2025]
+Finished job 57.
+2 of 74 steps (3%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:31:28 2025]
+rule MarkDups_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-Cont02_180_013_S184_L001.XX.picard_mkdup_metrics.txt
+    jobid: 56
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    wildcards: sample_name=VW-ASUPlace-Cont02_180_013_S184_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:31:48 2025]
+Finished job 32.
+3 of 74 steps (4%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:31:48 2025]
+rule MarkDups_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001.XY.picard_mkdup_metrics.txt
+    jobid: 31
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:31:50 2025]
+Finished job 17.
+4 of 74 steps (5%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:31:50 2025]
+rule MarkDups_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001.XY.picard_mkdup_metrics.txt
+    jobid: 16
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:32:41 2025]
+Finished job 47.
+5 of 74 steps (7%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:32:41 2025]
+rule MarkDups_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001.XY.picard_mkdup_metrics.txt
+    jobid: 46
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_sort_rdgrp_XY.bam
+    wildcards: sample_name=VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:32:54 2025]
+Finished job 99.
+6 of 74 steps (8%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:32:54 2025]
+rule bam_sort_females:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_sort_XX.bam
+    jobid: 98
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_sort_XX.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001_HISAT_pair_trim_XX.bam
+    wildcards: sample_name=VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:34:11 2025]
+Finished job 14.
+7 of 74 steps (9%) done
+Select jobs to execute...
+
+[Mon Nov 24 14:34:11 2025]
+rule bam_sort_males:
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_sort_XY.bam
+    jobid: 13
+    reason: Missing output files: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_sort_XY.bam; Input files updated by another job: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001_HISAT_pair_trim_XY.bam
+    wildcards: sample_name=VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001
+    resources: tmpdir=/tmp
+
+[Mon Nov 24 14:35:23 2025]
+Error in rule MarkDups_females:
+    jobid: 71
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001.XX.picard_mkdup_metrics.txt
+    shell:
+        
+         java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates          I=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_rdgrp_XX.bam          O=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam          M=/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001.XX.picard_mkdup_metrics.txt          VALIDATION_STRINGENCY=LENIENT
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Nov 24 14:35:56 2025]
+Finished job 22.
+8 of 74 steps (11%) done
+[Mon Nov 24 14:51:26 2025]
+Finished job 56.
+9 of 74 steps (12%) done
+[Mon Nov 24 14:51:34 2025]
+Finished job 31.
+10 of 74 steps (14%) done
+[Mon Nov 24 14:52:01 2025]
+Finished job 16.
+11 of 74 steps (15%) done
+[Mon Nov 24 14:54:15 2025]
+Finished job 46.
+12 of 74 steps (16%) done
+[Mon Nov 24 15:00:59 2025]
+Finished job 98.
+13 of 74 steps (18%) done
+[Mon Nov 24 15:04:20 2025]
+Finished job 13.
+14 of 74 steps (19%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-11-24T141810.722937.snakemake.log

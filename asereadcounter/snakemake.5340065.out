@@ -1,0 +1,23 @@
+[-] Unloading snakemake  7.32.4 
+[+] Loading snakemake  7.32.4 
+[+] Loading singularity  4.2.2  on cn2419 
+[+] Loading fastqc  0.12.1 
+[-] Unloading singularity  4.2.2  on cn2419 
+[+] Loading singularity  4.2.2  on cn2419 
+[+] Loading multiqc  1.28 
+[+] Loading samtools 1.21  ... 
+[+] Loading bamtools  2.5.3  on cn2419 
+[-] Unloading singularity  4.2.2  on cn2419 
+[+] Loading singularity  4.2.2  on cn2419 
+[+] Loading perl 5.36 on cn2419 
+[+] Loading java 18.0.1.1  ... 
+[+] Loading picard  3.3.0 
+[+] Loading hisat2  2.2.1  on cn2419 
+ This is HISAT2 v 2.2.1, built for NCBI NGS 3.0.0
+[-] Unloading samtools 1.21  ... 
+[+] Loading samtools 1.21  ... 
+Building DAG of jobs...
+LockException:
+Error: Directory cannot be locked. Please make sure that no other Snakemake process is trying to create the same files in the following directory:
+/vf/users/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter
+If you are sure that no other instances of snakemake are running on this directory, the remaining lock was likely caused by a kill signal or a power loss. It can be removed with the --unlock argument.

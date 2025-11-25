@@ -109,3 +109,77 @@ rule HISAT_paired_males:
     resources: tmpdir=/tmp
 
 hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_HISAT_pair_trim_XY.sam
+Terminating processes on user request, this might take some time.
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_females:
+    jobid: 90
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_HISAT_pair_trim_XX.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XXonly/HISAT_indexes/GRCh38.p12.genome.XXonly -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001_HISAT_pair_trim_XX.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_males:
+    jobid: 25
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_XY.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001_HISAT_pair_trim_XY.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_females:
+    jobid: 60
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont02_180_013_S184_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont02_180_013_S184_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_XX.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XXonly/HISAT_indexes/GRCh38.p12.genome.XXonly -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont02_180_013_S184_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont02_180_013_S184_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont02_180_013_S184_L001_HISAT_pair_trim_XX.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_females:
+    jobid: 75
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_XX.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XXonly/HISAT_indexes/GRCh38.p12.genome.XXonly -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001_HISAT_pair_trim_XX.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule HISAT_paired_males:
+    jobid: 40
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_HISAT_pair_trim_XY.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001_HISAT_pair_trim_XY.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_males:
+    jobid: 35
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_XY.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001_HISAT_pair_trim_XY.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_males:
+    jobid: 30
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_HISAT_pair_trim_XY.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001_HISAT_pair_trim_XY.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Nov 21 16:05:00 2025]
+Error in rule HISAT_paired_males:
+    jobid: 50
+    input: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_trimmed_R1.fastq.gz, /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_trimmed_R2.fastq.gz
+    output: /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_XY.sam
+    shell:
+        hisat2 -q --rna-strandness RF -p 8 -x /data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XY/HISAT_indexes/GRCh38.p12.genome.XY -1 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_trimmed_R1.fastq.gz -2 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/trimmed_fastqs_rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_trimmed_R2.fastq.gz -S /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001_HISAT_pair_trim_XY.sam
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2025-11-21T153246.617791.snakemake.log
