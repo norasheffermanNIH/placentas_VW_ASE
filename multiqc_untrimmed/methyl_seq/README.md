@@ -4,6 +4,7 @@
 This README documents the workflow for running FastQC and MultiQC on methyl sequencing samples
 
 For methyl-seq analysis, females (XX) and males (XY) are processed separately to allow use of different sex-aware reference genomes downstream.
+
 ---
 
 ## 1. Sample Lists
