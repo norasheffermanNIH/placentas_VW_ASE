@@ -13,6 +13,6 @@ module load bamtools
 module load perl
 module load picard
 module load hisat2
-cd /data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter
 
-snakemake -s processed_bams_Q1.snakefile --cores 8
+cd /data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter
+snakemake -s processed_bams_Q1.snakefile --cluster "sbatch --mem={resources.mem_mb} --cpus-per-task=4" -j 10

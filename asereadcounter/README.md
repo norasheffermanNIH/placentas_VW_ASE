@@ -13,7 +13,6 @@ The ASEReadCounter tool from the GATK package calculates read counts per allele 
 ```bash
 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna
 ```
-
 - Quadrants 2, 3, and 4:
 ```bash
 /data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna
@@ -65,4 +64,3 @@ Allele count tables are located at
 /data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/HISAT_allQs
 ```
 Files are organized by quadrant in the corresponding subdirectories.
-

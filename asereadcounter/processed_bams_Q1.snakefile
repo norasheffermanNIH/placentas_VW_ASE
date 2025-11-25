@@ -81,11 +81,13 @@ rule MarkDups_males:
     output:
         BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XY.bam",
         metrics = output_directory+"processed_bams/rna/stats/{sample_name}.XY.picard_mkdup_metrics.txt"
+    resources:
+        mem_mb = 12000 
     shell:
         r"""
         module load picard
         mkdir -p /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats
-        java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
+        java -Xmx8g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
         I={input.sort_BAM} \
         O={output.BAM} \
         M={output.metrics} \
@@ -141,11 +143,13 @@ rule MarkDups_females:
     output:
         BAM = output_directory+"processed_bams/rna/{sample_name}_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam",
         metrics = output_directory+"processed_bams/rna/stats/{sample_name}.XX.picard_mkdup_metrics.txt"
+    resources:
+        mem_mb = 12000 
     shell:
         r"""
         module load picard
         mkdir -p /data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/stats
-        java -Xmx14g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
+        java -Xmx8g -jar /usr/local/apps/picard/3.3.0/picard.jar MarkDuplicates \
         I={input.sort_BAM} \
         O={output.BAM} \
         M={output.metrics} \
