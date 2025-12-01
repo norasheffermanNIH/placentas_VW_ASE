@@ -39,7 +39,7 @@ sbatch run_snakemake.slurm
 ## 5. Running ASEReadCounter
 Once all BAM and VCF files are ready, scripts to run ASEReadCounter are located in:
 ```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/asereadcounter_scripts
+/data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/scripts
 ```
 
 ### 5.1 Create Bash Script with ASEReadCounter Commands
@@ -61,6 +61,6 @@ Repeat for each quadrants with the corresponding scripts and paths.
 ## 6. Output
 Allele count tables are located at
 ```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/HISAT_allQs
+/data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/HISAT
 ```
 Files are organized by quadrant in the corresponding subdirectories.
