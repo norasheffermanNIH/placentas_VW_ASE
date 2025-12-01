@@ -45,7 +45,8 @@ p8 <- ggplot(chr8, aes(x = pos_Mb, y = allele_balance)) +
   theme_bw()
 p8
 
-## Combine the two plots using patchwork
+# Combine the two plots using patchwork
 combined <- px/p8
 combined
+## Change name of file based on the sample it comes from
 ggsave("/vf/users/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/analyze_ase_results/allele_balance_chrom_plots/Q1/unphased_allele_balance_chrX&8_Plac_CON02_VW-ASUPlace-Cont02_Q1.png", combined, width = 10, height = 6, dpi = 300)
