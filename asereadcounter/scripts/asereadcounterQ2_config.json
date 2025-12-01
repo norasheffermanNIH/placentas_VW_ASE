@@ -1,0 +1,54 @@
+{
+    "dna_rna_normotensive_females" : {
+        "Plac_CON02": ["Cont02_quadrant2_Sample_2_084_109"],
+        "Plac_CON03": ["Cont03_quadrant2_Sample_3_072_121"],
+        "Plac_CON05": ["Cont05_quadrant2_Sample_5_048_145"],
+        "Plac_CON06": ["Cont06_quadrant2_Sample_6_036_157"],
+        "Plac_CON10": ["Cont10_quadrant2_Sample_10_083_110"]
+    },
+    "dna_rna_normotensive_males" : {
+        "Plac_CON01": ["Cont01_quadrant2_Sample_1_096_097"],
+        "Plac_CON04": ["Cont04_quadrant2_Sample_4_060_133"],
+        "Plac_CON07": ["Cont07_quadrant2_Sample_7_024_169"],
+        "Plac_CON08": ["Cont08_quadrant2_Sample_8_012_181_R"],
+        "Plac_CON09": ["Cont09_quadrant2_Sample_9_095_098"]
+    },
+    "dna_rna_hypertensive_females" : {
+        "Plac_HDP01":["HDP01_quadrant2_Sample_11_071_122"],
+        "Plac_HDP08":["HDP08_quadrant2_Sample_18_082_111"],
+        "Plac_HDP09":["HDP09_quadrant2_Sample_19_070_123"],
+        "Plac_HDP10":["HDP10_quadrant2_Sample_20_058_135"]
+    },
+    "dna_rna_hypertensive_males" : {
+        "Plac_HDP02":["HDP02_quadrant2_Sample_12_059_134"],
+        "Plac_HDP03":["HDP03_quadrant2_Sample_13_047_146_R"],
+        "Plac_HDP04":["HDP04_quadrant2_Sample_14_035_158"],
+        "Plac_HDP05":["HDP05_quadrant2_Sample_15_023_170"],
+        "Plac_HDP06":["HDP06_quadrant2_Sample_16_011_182"],
+        "Plac_HDP07":["HDP07_quadrant2_Sample_17_094_099"]
+  },
+  "dna_rna_females": {
+        "Plac_CON02": ["Cont02_quadrant2_Sample_2_084_109"],
+         "Plac_CON03": ["Cont03_quadrant2_Sample_3_072_121"],
+        "Plac_CON05": ["Cont05_quadrant2_Sample_5_048_145"],
+        "Plac_CON06": ["Cont06_quadrant2_Sample_6_036_157"],
+        "Plac_CON10": ["Cont10_quadrant2_Sample_10_083_110"],
+        "Plac_HDP01":["HDP01_quadrant2_Sample_11_071_122"],
+        "Plac_HDP08":["HDP08_quadrant2_Sample_18_082_111"],
+        "Plac_HDP09":["HDP09_quadrant2_Sample_19_070_123"],
+        "Plac_HDP10":["HDP10_quadrant2_Sample_20_058_135"]
+  },
+  "dna_rna_males": {
+        "Plac_CON01": ["Cont01_quadrant2_Sample_1_096_097"],
+        "Plac_CON04": ["Cont04_quadrant2_Sample_4_060_133"],
+        "Plac_CON07": ["Cont07_quadrant2_Sample_7_024_169"],
+        "Plac_CON08": ["Cont08_quadrant2_Sample_8_012_181_R"],
+        "Plac_CON09": ["Cont09_quadrant2_Sample_9_095_098"],
+        "Plac_HDP02":["HDP02_quadrant2_Sample_12_059_134"],
+        "Plac_HDP03":["HDP03_quadrant2_Sample_13_047_146_R"],
+        "Plac_HDP04":["HDP04_quadrant2_Sample_14_035_158"],
+        "Plac_HDP05":["HDP05_quadrant2_Sample_15_023_170"],
+        "Plac_HDP06":["HDP06_quadrant2_Sample_16_011_182"],
+        "Plac_HDP07":["HDP07_quadrant2_Sample_17_094_099"]
+  }
+}
