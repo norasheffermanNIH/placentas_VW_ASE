@@ -31,6 +31,7 @@ for quadrant in quadrants:
                 sites = output_directory_dna+"vqsr/chr"+chrom+".gatk.called.vqsr.sv.biallelic.snp."+key+".het.vcf"
 
                 #bam file
+                ## replace based on quadrant
                 bam = output_directory_rna+"processed_bams/rna/"+item+"_HISAT_pair_trim_sort_mkdup_rdgrp_XX.bam"
 
                 #output file that combines vcf, bam, and chromosome
