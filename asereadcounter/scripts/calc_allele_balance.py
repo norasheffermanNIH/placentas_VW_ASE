@@ -1,4 +1,4 @@
-#This script calculates the allele balance
+# This script calculates the allele balance
 import argparse
 
 parser = argparse.ArgumentParser(description = 'Calculate allele balance (unphased)')
@@ -7,24 +7,45 @@ parser.add_argument('--output', required = True, help = 'Inputh the path to the 
 
 args = parser.parse_args()
 
-#Header of the input file: contig	position	variantID	refAllele	altAllele	refCount	altCount	totalCount	lowMAPQDepth	lowBaseQDepth	rawDepth	otherBases	improperPairs
+# Header of the input file: contig	position	variantID	refAllele	altAllele	refCount	altCount	totalCount	lowMAPQDepth	lowBaseQDepth	rawDepth	otherBases	improperPairs
 input = args.input
 
-#Format of output file:
+# Format of output file:
 output = open(args.output, 'w')
 header = ['chr', 'position', 'ref_allele', 'alt_allele', 'ref_count', 'alt_count', 'total_count', 'allele_balance']
 print ('\t'.join(header), file = output)
 
 with open(input, 'r') as f:
     for line in f:
-        if not line.startswith('contig'):
-            items = line.rstrip('\n').split('\t')
-            out = [items[0], items[1], items[3], items[4], items[5], items[6], items[7]]
-            ref_ratio = float(items[5])/float(items[7])
-            alt_ratio = float(items[6])/float(items[7])
+        if line.startswith('contig'):
+            continue
+    
+        items = line.rstrip('\n').split('\t')
 
-            if ref_ratio > alt_ratio:
-                out.append(str(ref_ratio))
-            else:
-                out.append(str(alt_ratio))
-            print ('\t'.join(out), file = output)
+        # Extract counts
+        total = int(items[7])
+        ref = float(items[5])
+        alt = float(items[6])
+
+        # Skip variants with total coverage < 10
+        if total < 10:
+            continue
+
+        # Compute allele balance
+        ref_ratio = ref / total
+        alt_ratio = alt / total
+        allele_balance = max(ref_ratio, alt_ratio)
+        
+        # Prepare output
+        out = [
+            items[0], #chr
+            items[1], #position
+            items[3], #ref_allele
+            items[4], #alt_allele
+            items[5], #ref_count
+            items[6], #alt_count
+            items[7], #total_count,
+            f"{allele_balance:.4f}" #allele_balance
+        ]
+
+        print('\t'.join(out), file=output)

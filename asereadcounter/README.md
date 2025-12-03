@@ -86,7 +86,11 @@ Tables with the allele balance of each variant are located at
 Files are organized by quadrant in the corresponding subdirectories. 
 
 ### 7.3 Plot Unphased Allele Balance Across the X Chromosome
-Use `make_unphased_allele_balance_plots.R` located in the `scripts/` subdirectory to plot the unphased allele balance across chromosomes X and 8.
+Use `make_unphased_allele_balance_plots.R` located in the `scripts/` subdirectory to plot the unphased allele balance across chromosomes X and 8. 
+Submit as a batch job:
+```bash
+sbatch plot_unphased_allele_balance.slurm
+```
 Plots are located at 
 ```bash
 /data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/analyze_ase_results/allele_balance_chrom_plots/
