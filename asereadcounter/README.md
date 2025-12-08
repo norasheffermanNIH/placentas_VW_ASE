@@ -68,7 +68,7 @@ Files are organized by quadrant in the corresponding subdirectories.
 ASEReadCounter results were processed to compute the unphased allele balance of each variant.
 
 ### 7.1 Create Bash Script to Calculate Unphased Allele Balance for Each Variant
-Use `analyze_ase_script.py` located in the `scripts/` subdirectory to calculate the allele balance for all quadrant RNA samples.
+Use `analyze_ase_script.py` to calculate the allele balance for all quadrant RNA samples.
 Create a bash submission script:
 ```bash
 python analyze_ase_script.py >> run_analyze_ase_script.sh

@@ -1,0 +1,2 @@
+placenta_id	chromosome	phasing_quadrant	n_shared_variants	n_biased_Q1	n_biased_Q2	n_biased_Q3	n_biased_Q4	median_phased_allele_balance_Q1	median_phased_allele_balance_Q2	median_phased_allele_balance_Q3	median_phased_allele_balance_Q4
+Plac_HDP08	chrX	Q2	110	76	80	72	68	0.06904761904761905	0.9230769230769231	0.908695652173913	0.16117810760667903
