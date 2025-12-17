@@ -18,6 +18,7 @@
 00_multiqc_untrimmed/mean_reads_untrimmed.R
 02_run_asereadcounter/HISAT
 03_analyze_ase/allele_balance_tables
+03_analyze_ase/allele_balance_chrom_plots
 04_phasing/paired_placentas_shared_variants
 02_run_asereadcounter/troubleshooting
 03_analyze_ase/allele_balance_chrom_plots
