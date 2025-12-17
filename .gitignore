@@ -16,7 +16,6 @@
 00_multiqc_untrimmed/mean_reads_quad.tsv
 00_multiqc_untrimmed/mean_reads_patient.tsv
 00_multiqc_untrimmed/mean_reads_untrimmed.R
-00_multiqc_untrimmed/mean_reads_quad.tsv
 02_run_asereadcounter/HISAT
 03_analyze_ase/allele_balance_tables
 04_phasing/paired_placentas_shared_variants
