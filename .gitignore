@@ -21,15 +21,19 @@ mean_reads_untrimmed.R
 02_run_asereadcounter/troubleshooting
 03_analyze_ase/allele_balance_chrom_plots
 03_analyze_ase/violin_allele_balance
-04_phasing/phased_allele_balance/Plac_*
+04_phasing/phased_allele_balance
+04_phasing/chr8_summary_stats.txt
+04_phasing/chrX_summary_stats.txt
 04_phasing/median_phased_AB_plot.png
 05_males/allele_balance_tables
 05_males/HISAT
-05_males/make_male_vcfs
-05_males/phased_allele_balance/Plac_*
+05_males/phased_allele_balance
 05_males/placentas_shared_variants
 05_males/median_phased_AB_plot_males.png
-/data/Wilson_Lab/projects/placentas_VW_ASE/01_generate_files/vcfs/count_num_variants
-/data/Wilson_Lab/projects/placentas_VW_ASE/01_generate_files/vcfs/compare_vcfs
-/data/Wilson_Lab/projects/placentas_VW_ASE/01_generate_files/rna_bams/run_snakemake.slurm
-/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/troubleshooting
+01_generate_files/vcfs/count_num_variants
+01_generate_files/vcfs/compare_vcfs
+01_generate_files/vcfs/vqsr
+01_generate_files/rna_bams/run_snakemake.slurm
+02_run_asereadcounter/troubleshooting
+#For now:
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20
