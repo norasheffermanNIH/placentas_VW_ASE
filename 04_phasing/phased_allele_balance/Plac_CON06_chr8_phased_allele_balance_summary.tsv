@@ -1,2 +1,0 @@
-placenta_id	chromosome	phasing_quadrant	n_shared_variants	n_biased_Q1	n_biased_Q2	n_biased_Q3	n_biased_Q4	median_phased_allele_balance_Q1	median_phased_allele_balance_Q2	median_phased_allele_balance_Q3	median_phased_allele_balance_Q4
-Plac_CON06	chr8	Q1	234	148	147	143	147	0.9952082859094014	1.0	1.0	1.0

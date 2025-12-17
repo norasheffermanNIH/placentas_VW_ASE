@@ -1,2 +1,0 @@
-placenta_id	chromosome	phasing_quadrant	n_shared_variants	n_biased_Q1	n_biased_Q2	n_biased_Q3	n_biased_Q4	median_phased_allele_balance_Q1	median_phased_allele_balance_Q2	median_phased_allele_balance_Q3	median_phased_allele_balance_Q4
-Plac_CON03	chrX	Q4	124	40	97	79	100	0.7391304347826086	0.9393382352941176	0.875	0.9718253968253968
