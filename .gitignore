@@ -30,6 +30,8 @@
 05_males/HISAT
 05_males/phased_allele_balance
 05_males/placentas_shared_variants
+05_males/chr8_summary_stats.txt
+05_males/chrX_summary_stats.txt
 01_generate_files/vcfs/count_num_variants
 01_generate_files/vcfs/compare_vcfs
 01_generate_files/vcfs/vqsr
