@@ -26,12 +26,10 @@
 04_phasing/phased_allele_balance
 04_phasing/chr8_summary_stats.txt
 04_phasing/chrX_summary_stats.txt
-04_phasing/median_phased_AB_plot.png
 05_males/allele_balance_tables
 05_males/HISAT
 05_males/phased_allele_balance
 05_males/placentas_shared_variants
-05_males/median_phased_AB_plot_males.png
 01_generate_files/vcfs/count_num_variants
 01_generate_files/vcfs/compare_vcfs
 01_generate_files/vcfs/vqsr
