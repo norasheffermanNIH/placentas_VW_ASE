@@ -6,11 +6,13 @@ import os
 
 chrom = sys.argv[1].strip()
 chrom = chrom.replace("[","").replace("]","").replace("'","").replace('"',"")
-chromosomes = [chrom]
+
 totalCount_threshold = 10
+
 # Where the allele balance tables are stored
 base = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/allele_balance_tables/"
 
+# Load config
 with open("/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_config.json") as json_file:
     config = json.load(json_file)
 
@@ -18,11 +20,12 @@ placentas = sorted(config["dna_rna_females"].keys())
 quadrants = ["Q1", "Q2", "Q3", "Q4"]
 
 for placenta in placentas:
+    # Build paths to Q1-Q4 allele balance files
     paths = {}
     for quad in quadrants:
         sample_id = config["dna_rna_females"][placenta][quad]
-        fname = f"{sample_id}_chr{chrom}_allele_balance.tsv"
-        paths[quad] = os.path.join(base, quad, f"chr{chrom}", fname)
+        filename = f"{placenta}_{sample_id}_chr{chrom}_allele_balance.tsv"
+        paths[quad] = os.path.join(base, quad, f"chr{chrom}", filename)
     
     # Read Q1-Q4
     q1 = pd.read_csv(paths["Q1"], sep="\t")
@@ -44,10 +47,10 @@ for placenta in placentas:
     shared_variants = (
         q1.merge(q2, on=["chr", "position"], how="inner")
           .merge(q3, on=["chr", "position"], how="inner")
-          .merge(q4, on=["chr", "position"], how="inner")) # This returns the variants that are shared between different quadrants
+          .merge(q4, on=["chr", "position"], how="inner"))
     
     # Compute allele balance for each quadrant:
-    for q in ["Q1", "Q2", "Q3", "Q4"]:
+    for q in quadrants:
         shared_variants[f"allele_balance_{q}"] = (
             shared_variants[[f"ref_count_{q}", f"alt_count_{q}"]].max(axis=1)
             / shared_variants[f"total_count_{q}"])
@@ -69,7 +72,7 @@ for placenta in placentas:
 
     shared_variants_threshold.to_csv(out_file, sep = "\t", index=False)
             
-    # This prints out: sample id, sample name, chromosome, total number of shared variants, number of shared variants with allele balance > 0.75 in quadrant 1, number of shared variants with allele balance > 0.75 in quadrant 2, number of shared variants with allele balance > 0.75 in quadrant 3, number of shared variants with allele balance > 0.75 in quadrant 4
+    # This prints out a summary table with: sample id, sample name, chromosome, total number of shared variants, number of shared variants with allele balance > 0.75 in quadrant 1, number of shared variants with allele balance > 0.75 in quadrant 2, number of shared variants with allele balance > 0.75 in quadrant 3, number of shared variants with allele balance > 0.75 in quadrant 4
     out = [
         placenta, f"chr{chrom}", str(shared_variants_threshold.shape[0]), 
         str(len(shared_variants_threshold[shared_variants_threshold["allele_balance_Q1"] > 0.8])),

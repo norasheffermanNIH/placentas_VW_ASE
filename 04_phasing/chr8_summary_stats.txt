@@ -1,3 +1,4 @@
+sample id, chromosome, total number of shared variants, number of shared variants with allele balance > 0.75 in quadrant 1, number of shared variants with allele balance > 0.75 in quadrant 2, number of shared variants with allele balance > 0.75 in quadrant 3, number of shared variants with allele balance > 0.75 in quadrant 4
 Plac_CON02,chr8,279,14,12,12,12
 Plac_CON03,chr8,189,5,4,5,8
 Plac_CON05,chr8,198,112,116,118,117

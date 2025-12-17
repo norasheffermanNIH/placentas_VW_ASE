@@ -15,7 +15,7 @@ rule all:
 
 rule phase:
     input:
-        "/data/Wilson_Lab/projects/placentas_VW_ASE/asereadcounter/phasing/paired_placentas_shared_variants/{placenta}_paired_placentas_shared_variants_chr{chrom}.csv"
+        "/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/paired_placentas_shared_variants/{placenta}_paired_placentas_shared_variants_chr{chrom}.csv"
     output:
         summary = "/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/phased_allele_balance/{placenta}_chr{chrom}_phased_allele_balance_summary.tsv",
         phased_data = "/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/phased_allele_balance/{placenta}_chr{chrom}_phased_allele_balance_data.tsv"  

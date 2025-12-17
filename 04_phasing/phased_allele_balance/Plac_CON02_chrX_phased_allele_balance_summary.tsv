@@ -1,2 +1,2 @@
 placenta_id	chromosome	phasing_quadrant	n_shared_variants	n_biased_Q1	n_biased_Q2	n_biased_Q3	n_biased_Q4	median_phased_allele_balance_Q1	median_phased_allele_balance_Q2	median_phased_allele_balance_Q3	median_phased_allele_balance_Q4
-Plac_CON02	chrX	Q3	110	57	51	67	55	0.8150611071171818	0.4006578947368421	0.8917222301035608	0.7885714285714285
+Plac_CON02	chrX	Q3	110	57	51	67	55	0.8150611071171818	0.36408857509627723	0.8917222301035608	0.788855116514691

@@ -18,7 +18,7 @@ args = parser.parse_args()
 df = pd.read_csv(args.shared_variants, sep='\t')
 
 # Choose phasing quadrant
-thresh = 0.75
+thresh = 0.8
 
 biased_count = {
     "Q1": (df['allele_balance_Q1'] > thresh).sum(),
@@ -75,7 +75,7 @@ df["haplotype_allele"] = hap_allele
 for qi in quadrants:
     df[f'phased_allele_balance_{qi}'] = phased_AB[qi]
 
-# Write per-variant phased data
+# Write phased data per variant
 out_phased_dir = os.path.dirname(args.out_phased_data)
 if out_phased_dir and not os.path.exists(out_phased_dir):
     os.makedirs(out_phased_dir, exist_ok=True)
