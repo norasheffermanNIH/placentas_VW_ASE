@@ -1,0 +1,70 @@
+{
+    "dna_rna_males" : {
+        "Plac_CON01": {
+            "Q1": "VW-ASUPlace-Cont01_192_001_S183_L001",
+            "Q2": "Cont01_quadrant2_Sample_1_096_097",
+            "Q3": "Cont01_quadrant3_Sample_1_046_147",
+            "Q4": "Cont01_quadrant4_Sample_21_091_102"
+        },
+        "Plac_CON04": {
+            "Q1": "VW-ASUPlace-Cont04_156_037_S186_L001",
+            "Q2": "Cont04_quadrant2_Sample_4_060_133",
+            "Q3": "Cont04_quadrant3_Sample_4_010_183",
+            "Q4": "Cont04_quadrant4_Sample_24_055_138"
+        },
+        "Plac_CON07": {
+            "Q1": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+            "Q2": "Cont07_quadrant2_Sample_7_024_169",
+            "Q3": "Cont07_quadrant3_Sample_7_069_124",
+            "Q4": "Cont07_quadrant4_Sample_27_019_174"
+        },
+        "Plac_CON08": {
+            "Q1": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+            "Q2": "Cont08_quadrant2_Sample_8_012_181_R",
+            "Q3": "Cont08_quadrant3_Sample_8_057_136",
+            "Q4": "Cont08_quadrant4_Sample_28_007_186"
+        },
+        "Plac_CON09": {
+            "Q1": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+            "Q2": "Cont09_quadrant2_Sample_9_095_098",
+            "Q3": "Cont09_quadrant3_Sample_9_045_148",
+            "Q4": "Cont09_quadrant4_Sample_29_090_103"
+        },
+        "Plac_HDP02": {
+            "Q1": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+            "Q2": "HDP02_quadrant2_Sample_12_059_134",
+            "Q3": "HDP02_quadrant3_Sample_12_009_184",
+            "Q4": "HDP02_quadrant4_Sample_32_054_139"
+        },
+        "Plac_HDP03": {
+            "Q1": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+            "Q2": "HDP03_quadrant2_Sample_13_047_146_R",
+            "Q3": "HDP03_quadrant3_Sample_13_092_101",
+            "Q4": "HDP03_quadrant4_Sample_33_042_151"
+        },
+        "Plac_HDP04": {
+            "Q1": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+            "Q2": "HDP04_quadrant2_Sample_14_035_158",
+            "Q3": "HDP04_quadrant3_Sample_14_080_113",
+            "Q4": "HDP04_quadrant4_Sample_34_030_163"
+        },
+        "Plac_HDP05": {
+            "Q1": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+            "Q2": "HDP05_quadrant2_Sample_15_023_170",
+            "Q3": "HDP05_quadrant3_Sample_15_068_125",
+            "Q4": "HDP05_quadrant4_Sample_35_018_175"
+        },
+        "Plac_HDP06": {
+            "Q1": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+            "Q2": "HDP06_quadrant2_Sample_16_011_182",
+            "Q3": "HDP06_quadrant3_Sample_16_056_137",
+            "Q4": "HDP06_quadrant4_Sample_36_006_187"
+        },
+        "Plac_HDP07": {
+            "Q1": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+            "Q2": "HDP07_quadrant2_Sample_17_094_099",
+            "Q3": "HDP07_quadrant3_Sample_17_044_149",
+            "Q4": "HDP07_quadrant4_Sample_37_089_104"
+        }
+    }
+}
