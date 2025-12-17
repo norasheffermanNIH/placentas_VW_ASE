@@ -37,4 +37,4 @@
 01_generate_files/rna_bams/run_snakemake.slurm
 02_run_asereadcounter/troubleshooting
 #For now:
-/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20
+06_chr20/
