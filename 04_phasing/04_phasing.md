@@ -5,6 +5,7 @@
 `/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing`
 
 **Scripts**:
+- `phase.py` - Computes allele balance using phased data 
 - `subset_paired_placentas_for_shared_variants.py` - Selects only variants expressed across all quadrants of the same placenta.
 - `phase.snakefile` - Chooses sites with more variants where allele balance is greater than the threshold (if allele balance is equal to 0.5, pick random), generates a haplotype by adding all biased alleles together, and calculates allele balance using the phased data
     - Chose threshold of 0.8 for phasing, can adjust it to be higher or lower

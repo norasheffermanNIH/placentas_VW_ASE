@@ -3,16 +3,14 @@ import itertools
 import os
 
 # Load config
-with open("/data/Wilson_Lab/projects/placentas_VW_ASE/troubleshooting/variant_overlap_correct_swapping/correct_swapped_samples.json") as config_json:
+with open("/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/correct_swapped_samples.json") as config_json:
     config = json.load(config_json)
 
 chromosomes = ["8", "X"]
 quadrants = ["Q1", "Q2", "Q3", "Q4"]
 
-refXX = "/data/Wilson_Lab/references/GENCODE/GRCh38.p12.genome.XXonly/GRCh38.p12.genome.XXonly.fa"
-
-output_directory_1 = "/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/run_asereadcounter_correct_swapping/"
-output_directory_2 = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_correct_swapping/"
+output_directory_1 = "/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/"
+output_directory_2 = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/"
 
 calc_allele_balance_script = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/calc_allele_balance.py"
 

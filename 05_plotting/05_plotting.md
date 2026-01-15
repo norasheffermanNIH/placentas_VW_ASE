@@ -5,7 +5,7 @@
 `/data/Wilson_Lab/projects/placentas_VW_ASE/05_plotting`
 
 **Scripts**:
-- `phased_allele_balance_median_plot.R` - Generates plot of median phased allele balance for each quadrant across female placentas using phased ASE summary tables.
+- `phased_allele_balance_median_plot.R` - Generates plot of median phased allele balance for each quadrant across female placentas using phased allele balance summary tables.
 
 **Steps**:
 

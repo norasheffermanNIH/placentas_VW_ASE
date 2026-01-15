@@ -1,8 +1,3 @@
-#!/bin/bash
-#SBATCH --job-name=analyze_ase         # Job name
-#SBATCH -o slurm.%j.out                # STDOUT (%j = JobId)
-#SBATCH -e slurm.%j.err                # STDERR (%j = JobId)
-
 mkdir -p /data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_correct_swapping/allele_balance_tables/Q1/chr8/
 sbatch --mem=20G -n 2 --wrap="python3 /data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/calc_allele_balance.py --input /data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/run_asereadcounter_correct_swapping/HISAT/Q1/chr8/Plac_CON02_Q1_chr8_females.tsv --output /data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_correct_swapping/allele_balance_tables/Q1/chr8/Plac_CON02_Q1_chr8_allele_balance.tsv"
 mkdir -p /data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_correct_swapping/allele_balance_tables/Q1/chrX/

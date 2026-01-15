@@ -5,7 +5,7 @@
 `/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter`
 
 **Scripts**:
-- `asereadcounter_script.py` - Build ASEReadCounter commands for all quadrant samples and writes them to a SLURM submission script
+- `asereadcounter_script.py` - Builds ASEReadCounter commands for all quadrant samples and writes them to a SLURM submission script
 - `run_asereadcounter_script.py` - Runs job submissions from `asereadcounter_script.py `
 
 **Files**:
@@ -16,7 +16,7 @@
 1. Confirm that the correct config file and all inputs are present in `asereadcounter_script.py`. 
 2. Generate the SLURM job script. 
 ```
-python asereadcounterscript.py > run_asereadcounter_script.sh
+python asereadcounter_script.py > run_asereadcounter_script.sh
 ```
 3. Submit jobs.
 ```

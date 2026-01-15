@@ -1,9 +1,4 @@
-# ------
-# README:
-# before running this snakemake file, please edit line 15 to give the correct path to GATK.
-# before running this snakemake file, please edit line 837 to give the correct path to the python script
-# The script calc_num_site_in_vcf.py can be found at https://github.com/tanyaphung/vcfhelper
-# ------
+
 import os
 
 configfile: "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/valleywise_pilot_config.dna.rdgroups.json"

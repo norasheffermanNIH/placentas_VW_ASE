@@ -10,10 +10,10 @@ chrom = chrom.replace("[","").replace("]","").replace("'","").replace('"',"")
 totalCount_threshold = 10
 
 # Where the allele balance tables are stored
-base = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/analyze_ase_correct_swapping/allele_balance_tables/"
+base = "/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/allele_balance_tables/"
 
 # Load config
-with open("/data/Wilson_Lab/projects/placentas_VW_ASE/troubleshooting/variant_overlap_correct_swapping/correct_swapped_samples.json") as json_file:
+with open("/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/correct_swapped_samples.json") as json_file:
     config = json.load(json_file)
 
 placentas = sorted(config["dna_rna_females"].keys())
@@ -62,7 +62,7 @@ for placenta in placentas:
         (shared_variants["total_count_Q4"] >= totalCount_threshold)]
 
     # Output path: one file per placenta and chromosome
-    out_dir = "/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/phasing_correct_swapping/paired_placentas_shared_variants/"
+    out_dir = "/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/paired_placentas_shared_variants/"
     os.makedirs(out_dir, exist_ok=True)
 
     out_file = os.path.join(
