@@ -13,9 +13,10 @@ To test correlations between methylation and allele specific expression, and ove
 ## Steps:
 1. MultiQC
 2. ASE Read Counter
+3. 
 
 ## MultiQC pipeline
-More information found in `00_mutliqc_untrimmed/README.md`
+More information can be found in `00_multiqc_untrimmed/multiqc_untrimmed.md`
 
 ## ASE Read Counter Pipeline
 The ASEReadCounter tool from the GATK package calculates read counts per allele at specific variant sites, allowing for allele-specific expression (ASE) analysis of RNA-seq data.
@@ -60,62 +61,14 @@ Scripts:
 - `process_female_dna.snakefile` - Snakemake workflow to generate VCFs for chr8 and chrX of female placentas
 - `process_male_dna.snakefile` - Snakemake workflow to generate VCFs for chr8 and chrX of male placentas
 
-### 02_run_asereadcounter
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter
-```
-
-Scripts:
-- `asereadcounter_script.py` - Build ASEReadCounter commands for all quadrant samples
-
-Output:
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/02_run_asereadcounter/HISAT
-```
+### 02_analyze_ase
 
 ### 03_analyze_ase
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase
-```
-
-* Filter out variants with a total coverage less than 10
-
-Scripts:
-- `analyze_ase_script.py` - Calculates the allele balance for all quadrant samples
-
-Output:
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/03_analyze_ase/allele_balance_tables
-```
 
 ### 04_phasing
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing
-```
 
-* Threshold of 0.8 for phasing
+### 05_plotting
 
-Scripts:
-- `subset_paired_placentas_for_shared_variants.py` - Selects only variants expressed across all quadrants
-- `phase.snakefile` - Chooses site with more variants where allele balance is greater than the threshold (if allele balance is equal to 0.5, pick random), generates a haplotype by adding all biased alleles together, and calculates allele balance using the phased data 
-* Once phased allele balance tables are generated, run
-
-```bash
-cd /data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/phased_allele_balance
-cat *chrX*allele_balance_summary.tsv | grep -v placenta_id | sort -n -r -k 3, 3 > all_placenta_chrX_phased_allele_balance.tsv
-cat *chr8*allele_balance_summary.tsv | grep -v placenta_id | sort -n -r -k 3, 3 > all_placenta_chr8_phased_allele_balance.tsv
-```
-
-to get median phased allele balances across all quadrants per placenta.
-- `phased_allele_balance_median_plot.R` - Plot median phased allele balance for each quadrant across placentas
-
-Output:
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/paired_placentas_shared_variants
-```
-```bash
-/data/Wilson_Lab/projects/placentas_VW_ASE/04_phasing/phased_allele_balance
-```
 
 ### 05_males
 ```bash
@@ -143,4 +96,32 @@ Output:
 ```
 ```bash
 /data/Wilson_Lab/projects/placentas_VW_ASE/05_males/phased_allele_balance
+```
+
+### 06_chr20
+```bash
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20
+```
+
+Repeat all steps using chr20 from female placentas as a control
+
+Scripts:
+- `asereadcounter_script_chr20.py`
+- `analyze_ase_script_chr20.py`
+- `subset_paired_placentas_for_shared_variants_chr20.py`
+- `phase_chr20.snakefile`
+- `phased_allele_balance_median_plot_chr20.R`
+
+Output:
+```bash
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20/HISAT
+```
+```bash
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20/allele_balance_tables
+```
+```bash
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20/placentas_shared_variants
+```
+```bash
+/data/Wilson_Lab/projects/placentas_VW_ASE/06_chr20/phased_allele_balance
 ```
