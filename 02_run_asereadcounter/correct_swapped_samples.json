@@ -1,0 +1,446 @@
+{
+    "dna_rna_females" : {
+        "Plac_CON02": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont02_180_013_S184_L001",
+                "vcf": "Plac_CON02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont02_quadrant2_Sample_2_084_109",
+                "vcf": "Plac_CON02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont02_quadrant3_Sample_2_034_159",
+                "vcf": "Plac_CON02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont02_quadrant4_Sample_22_079_114",
+                "vcf": "Plac_CON02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON03": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont03_168_025_S185_L001",
+                "vcf": "Plac_CON03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont03_quadrant2_Sample_3_072_121",
+                "vcf": "Plac_CON03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont03_quadrant3_Sample_3_022_171",
+                "vcf": "Plac_CON03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont03_quadrant4_Sample_23_067_126",
+                "vcf": "Plac_CON03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON05": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont05-Q1RNA1_144_049_S187_L001",
+                "vcf": "Plac_CON06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont05_quadrant2_Sample_5_048_145", 
+                "vcf": "Plac_CON06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont05_quadrant3_Sample_5_093_100",
+                "vcf": "Plac_CON06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont05_quadrant4_Sample_25_043_150",
+                "vcf": "Plac_CON06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON06": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont06-Q1RNA1_132_061_S188_L001",
+                "vcf": "Plac_CON05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont06_quadrant2_Sample_6_036_157",
+                "vcf": "Plac_CON05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont06_quadrant3_Sample_6_081_112",
+                "vcf": "Plac_CON05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont06_quadrant4_Sample_26_031_162",
+                "vcf": "Plac_CON05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON10": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont10-Q1RNA1_179_014_S192_L001",
+                "vcf": "Plac_CON10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont10_quadrant2_Sample_10_083_110",
+                "vcf": "Plac_CON10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont10_quadrant3_Sample_10_033_160",
+                "vcf": "Plac_CON10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont10_quadrant4_Sample_30_078_115",
+                "vcf": "Plac_CON10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP01": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP01_167_026_S193_L001",
+                "vcf": "Plac_HDP02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP01_quadrant2_Sample_11_071_122",
+                "vcf": "Plac_HDP02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP01_quadrant3_Sample_11_021_172",
+                "vcf": "Plac_HDP02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP01_quadrant4_Sample_31_066_127",
+                "vcf": "Plac_HDP02",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP08": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP08-Q1RNA1_178_015_S200_L001",
+                "vcf": "Plac_HDP08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP08_quadrant2_Sample_18_082_111",
+                "vcf": "Plac_HDP08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP08_quadrant3_Sample_18_032_161",
+                "vcf": "Plac_HDP08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP08_quadrant4_Sample_38_077_116",
+                "vcf": "Plac_HDP08",   
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP09": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP09-Q1RNA1_166_027_S201_L001",
+                "vcf": "Plac_HDP09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP09_quadrant2_Sample_19_070_123",
+                "vcf": "Plac_HDP09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP09_quadrant3_Sample_19_020_173",
+                "vcf": "Plac_HDP09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP09_quadrant4_Sample_39_065_128",
+                "vcf": "Plac_HDP09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP10": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP10-Q1RNA1_154_039_S202_L001",
+                "vcf": "Plac_HDP10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP10_quadrant2_Sample_20_058_135",
+                "vcf": "Plac_HDP10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP10_quadrant3_Sample_20_008_185",
+                "vcf": "Plac_HDP10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP10_quadrant4_Sample_40_053_140",
+                "vcf": "Plac_HDP10",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        }
+    },
+    "dna_rna_males" : {
+        "Plac_CON01": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont01_192_001_S183_L001",
+                "vcf": "Plac_CON01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont01_quadrant2_Sample_1_096_097",
+                "vcf": "Plac_CON01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont01_quadrant3_Sample_1_046_147",
+                "vcf": "Plac_CON01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont01_quadrant4_Sample_21_091_102",
+                "vcf": "Plac_CON01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON04": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont04_156_037_S186_L001",
+                "vcf": "Plac_CON04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont04_quadrant2_Sample_4_060_133",
+                "vcf": "Plac_CON04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont04_quadrant3_Sample_4_010_183",
+                "vcf": "Plac_CON04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont04_quadrant4_Sample_24_055_138",
+                "vcf": "Plac_CON04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON07": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont07-Q1RNA1_120_073_S189_L001",
+                "vcf": "Plac_CON07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont07_quadrant2_Sample_7_024_169",
+                "vcf": "Plac_CON07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont07_quadrant3_Sample_7_069_124",
+                "vcf": "Plac_CON07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont07_quadrant4_Sample_27_019_174",
+                "vcf": "Plac_CON07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON08": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont08-Q1RNA1_108_085_S190_L001",
+                "vcf": "Plac_CON08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont08_quadrant2_Sample_8_012_181_R",
+                "vcf": "Plac_CON08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont08_quadrant3_Sample_8_057_136",
+                "vcf": "Plac_CON08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont08_quadrant4_Sample_28_007_186",
+                "vcf": "Plac_CON08",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_CON09": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-Cont09-Q1RNA1_191_002_S191_L001",
+                "vcf": "Plac_CON09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "Cont09_quadrant2_Sample_9_095_098",
+                "vcf": "Plac_CON09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "Cont09_quadrant3_Sample_9_045_148",
+                "vcf": "Plac_CON09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "Cont09_quadrant4_Sample_29_090_103",
+                "vcf": "Plac_CON09",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP02": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP02-Q1RNA1_155_038_S194_L001",
+                "vcf": "Plac_HDP01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP02_quadrant2_Sample_12_059_134",
+                "vcf": "Plac_HDP01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP02_quadrant3_Sample_12_009_184",
+                "vcf": "Plac_HDP01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP02_quadrant4_Sample_32_054_139",
+                "vcf": "Plac_HDP01",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP03": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP03-Q1RNA1_143_050_S195_L001",
+                "vcf": "Plac_HDP03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP03_quadrant2_Sample_13_047_146_R",
+                "vcf": "Plac_HDP03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP03_quadrant3_Sample_13_092_101",
+                "vcf": "Plac_HDP03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP03_quadrant4_Sample_33_042_151",
+                "vcf": "Plac_HDP03",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP04": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP04-Q1RNA1_131_062_S196_L001",
+                "vcf": "Plac_HDP04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP04_quadrant2_Sample_14_035_158",
+                "vcf": "Plac_HDP04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP04_quadrant3_Sample_14_080_113",
+                "vcf": "Plac_HDP04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP04_quadrant4_Sample_34_030_163",
+                "vcf": "Plac_HDP04",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP05": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP05-Q1RNA1_119_074_S197_L001",
+                "vcf": "Plac_HDP06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP05_quadrant2_Sample_15_023_170",
+                "vcf": "Plac_HDP06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP05_quadrant3_Sample_15_068_125",
+                "vcf": "Plac_HDP06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP05_quadrant4_Sample_35_018_175",
+                "vcf": "Plac_HDP06",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP06": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP06-Q1RNA1_107_086_S198_L001",
+                "vcf": "Plac_HDP07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP06_quadrant2_Sample_16_011_182",
+                "vcf": "Plac_HDP07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP06_quadrant3_Sample_16_056_137",
+                "vcf": "Plac_HDP07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP06_quadrant4_Sample_36_006_187",
+                "vcf": "Plac_HDP07",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        },
+        "Plac_HDP07": {
+            "Q1": {
+                "rna_sample": "VW-ASUPlace-HDP07-Q1RNA1_190_003_S199_L001",
+                "vcf": "Plac_HDP05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_pilot/processed_bams/rna/"
+            },
+            "Q2": {
+                "rna_sample": "HDP07_quadrant2_Sample_17_094_099",
+                "vcf": "Plac_HDP05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q3": {
+                "rna_sample": "HDP07_quadrant3_Sample_17_044_149",
+                "vcf": "Plac_HDP05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            },
+            "Q4": {
+                "rna_sample": "HDP07_quadrant4_Sample_37_089_104",
+                "vcf": "Plac_HDP05",
+                "bam_dir": "/data/Wilson_Lab/projects/placenta_multiomics/valleywise_3samples/processed_bams_HG38/rna/"
+            }
+        }
+    }
+}
